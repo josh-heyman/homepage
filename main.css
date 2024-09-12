@@ -156,6 +156,12 @@ body {
     opacity: 0.6;
 }
 
+footer {
+    margin-block: 5rem;
+    text-align: center;
+    opacity: 0.2;
+}
+
 /* helpers */
 .flex {
     display: flex;
