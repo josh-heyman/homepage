@@ -23,7 +23,7 @@ body {
     margin: 0;
 }
 
-@media (max-width: 20em) {
+@media (max-width: 35em) {
     .primary-navigation {
         flex-direction: column;
     }
@@ -82,7 +82,7 @@ body {
     display: none;
 }
 
-@media (max-width: 65em) {
+@media (max-width: 68em) {
     .home-one {
         flex-direction: column-reverse;
         --gap: 1rem;
