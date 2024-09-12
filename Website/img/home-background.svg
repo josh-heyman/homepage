@@ -1,0 +1,16 @@
+
+<svg width="7680px" height="4320px" viewBox="0 0 7680 4320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="76.2464111%" y1="34.1796875%" x2="50%" y2="65.8203125%" id="linearGradient-hxgwk0aqqo-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-hxgwk0aqqo-2" points="2.77870817e-13 1.78162165e-14 7680 1.78162165e-14 7680 240 0 3680 2.77870817e-13 4320"></polygon>
+    </defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Background-Gradient">
+            <use fill="#3775E2" xlink:href="#path-hxgwk0aqqo-2"></use>
+            <use fill="url(#linearGradient-hxgwk0aqqo-1)" xlink:href="#path-hxgwk0aqqo-2"></use>
+        </g>
+    </g>
+</svg>
