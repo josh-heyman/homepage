@@ -39,6 +39,7 @@
 }
 
 .project-learn-more {
+    display: none;
     align-content: flex-end;
     flex-shrink: 0;
     flex-grow: 1;
