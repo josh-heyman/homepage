@@ -2,24 +2,29 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="nav.css" />
+        <link rel="stylesheet" href="projects.css" />
+        <link rel="stylesheet" href="testimonials.css" />
         <title>Josh Heyman</title>
     </head>
     <body>
-        <header class="primary-header">
+        <header>
             <nav>
-                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-                    <li hidden><a class="navigation-link" href="#home">Projects</a></li>
-                    <li hidden><a class="navigation-link" href="#home">About</a></li>
-                    <li hidden><a class="navigation-link" href="#home">Contact</a></li>
+                <ul class="primary-navigation">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <main class="home-group">
-            <div class="home-one flex">
+        <main class="homepage">
+            <div id="home" class="home">
                 <div class="home-introduction">
                     <div class="title-container">
-                        <div class="large-title text-accent">Hello,</div>
+                        <div class="pre-title accent">Hello,</div>
                         <div class="title">I am Josh Heyman</div>
                     </div>
                     <p>
@@ -40,27 +45,58 @@
                         <li>Web Design</li>
                     </ul>
                 </div>
+            </div>
 
-                <div class="introduction-image-medium">
-                    <img src="img/profile-medium.png" />
-                </div>
+            <div id="projects" class="projects">
+                <h1>Projects</h1>
+                <div class="projects-grid">
+                    <article id="filament-machine" class="project">
+                        <picture class="project-image">
+                            <img src="img/filament-machine.jpg" />
+                        </picture>
 
-                <div class="introduction-image-small">
-                    <img src="img/profile.jpg" />
+                        <div class="project-details">
+                            <h2>Filament Machine</h2>
+                            <h3>A-Level Design and Technolgy</h3>
+                            <div class="project-description">
+                                The project aim was to develop a machine capable of recycling plastic bottles and
+                                turning them into filament to be used by 3D printers. The design had to take into
+                                consideration the sustainability of materials used, the safety of the operator, and had
+                                to be easy and simple in its operation.
+                            </div>
+                        </div>
+                        <div class="project-learn-more">
+                            <a class="button button-primary" href="#">Learn More</a>
+                        </div>
+                    </article>
+
+                    <article id="imac-teardown" class="project">
+                        <picture class="project-image">
+                            <img src="img/iMac.jpg" />
+                        </picture>
+
+                        <div class="project-details">
+                            <h2>iMac Teardown</h2>
+                            <h3>Creating a display showing the inner workings of iMac</h3>
+                            <div class="project-description">A summary snippet of the project.</div>
+                        </div>
+
+                        <div class="project-learn-more">
+                            <a class="button button-primary" href="#">Learn More</a>
+                        </div>
+                    </article>
                 </div>
             </div>
 
-            <div class="testimonials">
-                <div class="title-container">
-                    <div class="title">Testimonials</div>
-                </div>
+            <div id="testimonials" class="testimonials">
+                <h1>Testimonials</h1>
                 <div class="testimonials-grid">
-                    <article class="testimonial accent-1 grid-column-span-2">
-                        <div class="testimonial-title">Will Pope</div>
-                        <div class="testimonial-subtitle">
+                    <article class="testimonial" style="background: var(--accent-1)">
+                        <h2>Will Pope</h2>
+                        <h4>
                             <span class="testimonial-job-description">Head of Upper Sixth</span> -
                             <span class="testimonial-workplace">Reed's School</span>
-                        </div>
+                        </h4>
                         <div class="testimonial-content">
                             Josh has been an absolute delight to have in the Sixth Form house over the last two years.
                             His passion and commitment for design has shone forth throughout his A levels and my visits
@@ -74,12 +110,12 @@
                         </div>
                     </article>
 
-                    <article class="testimonial accent-2">
-                        <div class="testimonial-title">Cambell Thomson</div>
-                        <div class="testimonial-subtitle">
+                    <article class="testimonial" style="background: var(--accent-2)">
+                        <h2>Cambell Thomson</h2>
+                        <h4>
                             <span class="testimonial-job-description">Upper Sixth Tutor</span> -
                             <span class="testimonial-workplace">Reed's School</span>
-                        </div>
+                        </h4>
                         <div class="testimonial-content">
                             Joshua is a most mature and diligent member of the tutor group. He is always willing to help
                             his peers with any IT problems and teachers have commented to me that he works in an
@@ -87,12 +123,12 @@
                         </div>
                     </article>
 
-                    <article class="testimonial accent-5">
-                        <div class="testimonial-title">Mark Hoskins</div>
-                        <div class="testimonial-subtitle">
+                    <article class="testimonial" style="background: var(--accent-3)">
+                        <h2>Mark Hoskins</h2>
+                        <h4>
                             <span class="testimonial-job-description">Headmaster</span> -
                             <span class="testimonial-workplace">Reed's School</span>
-                        </div>
+                        </h4>
                         <div class="testimonial-content">
                             You have certainly contributed greatly to the Reed's community, through your initiative and
                             design creativity in particular - the country needs minds such as yours! Also, you should
@@ -102,12 +138,12 @@
                         </div>
                     </article>
 
-                    <article class="testimonial accent-4 grid-column-span-2">
-                        <div class="testimonial-title">Ed Marsh</div>
-                        <div class="testimonial-subtitle">
+                    <article class="testimonial" style="background: var(--accent-4)">
+                        <h2>Ed Marsh</h2>
+                        <h4>
                             <span class="testimonial-job-description">Fifth Form Tutor</span> -
                             <span class="testimonial-workplace">Reed's School</span>
-                        </div>
+                        </h4>
                         <div class="testimonial-content">
                             Joshua is a leading light in the year group and can be very proud of all his numerous
                             successes. Yet again this is a brilliant report with mainly "Excellent" for effort and this
@@ -121,12 +157,12 @@
                         </div>
                     </article>
 
-                    <article class="testimonial accent-2">
-                        <div class="testimonial-title">Will Pope</div>
-                        <div class="testimonial-subtitle">
+                    <article class="testimonial" style="background: var(--accent-5)">
+                        <h2>Will Pope</h2>
+                        <h4>
                             <span class="testimonial-job-description">Teacher of Engineering</span> -
                             <span class="testimonial-workplace">Reed's School</span>
-                        </div>
+                        </h4>
                         <div class="testimonial-content">
                             I have noticed a great improvement in Joshua's self confidence and belief in his own
                             abilities, particularly in our Engineering project. Josh has become an unofficial leader of
@@ -135,12 +171,12 @@
                         </div>
                     </article>
 
-                    <article class="testimonial accent-1">
-                        <div class="testimonial-title">Andy Austin</div>
-                        <div class="testimonial-subtitle">
+                    <article class="testimonial" style="background: var(--accent-1)">
+                        <h2>Andy Austin</h2>
+                        <h4>
                             <span class="testimonial-job-description">Year 8 Tutor</span> -
                             <span class="testimonial-workplace">Kings's House School</span>
-                        </div>
+                        </h4>
                         <div class="testimonial-content">
                             Joshua has contributed well to wider school life, collecting credits for his house, helping
                             make Bonenza Ball nets for a Rwanda Aid event, props for the Year 6 and 8 productions and
@@ -148,12 +184,12 @@
                         </div>
                     </article>
 
-                    <article class="testimonial accent-3 grid-column-span-2">
-                        <div class="testimonial-title">Estelle Patten</div>
-                        <div class="testimonial-subtitle">
+                    <article class="testimonial" style="background: var(--accent-2)">
+                        <h2>Estelle Patten</h2>
+                        <h4>
                             <span class="testimonial-job-description">Head of Design &amp; Technology</span> -
                             <span class="testimonial-workplace">Kings's House School</span>
-                        </div>
+                        </h4>
                         <div class="testimonial-content">
                             Joshua has been so committed to the projects that we have worked on that he has gone above
                             and beyond to research and develop resources that have been used for the benefit of the
@@ -163,12 +199,12 @@
                         </div>
                     </article>
 
-                    <article class="testimonial accent-6">
-                        <div class="testimonial-title">Adam Bradley</div>
-                        <div class="testimonial-subtitle">
+                    <article class="testimonial" style="background: var(--accent-3)">
+                        <h2>Adam Bradley</h2>
+                        <h4>
                             <span class="testimonial-job-description">Year 7 Tutor</span> -
                             <span class="testimonial-workplace">Kings's House School</span>
-                        </div>
+                        </h4>
                         <div class="testimonial-content">
                             His high levels of organisation and focus, as well as his conscientious and polite approach
                             have also been identified by most of his subject leaders as those which he demonstrates most
@@ -181,6 +217,6 @@
                 </div>
             </div>
         </main>
-        <footer>Copyright © Joshua Heyman 2024</footer>
+        <footer>Copyright © 2024 Joshua Heyman</footer>
     </body>
 </html>

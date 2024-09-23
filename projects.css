@@ -1,0 +1,46 @@
+.projects-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background: var(--accent-1);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+@media (min-width: 80em) {
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.project-image {
+    flex-shrink: 1;
+    flex-grow: 0;
+    flex-basis: 12lh;
+    align-self: center;
+    text-align: center;
+}
+
+.project-image img {
+    height: 10lh;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.project-details {
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 30ch;
+}
+
+.project-learn-more {
+    align-content: flex-end;
+    flex-shrink: 0;
+    flex-grow: 1;
+    text-align: end;
+}

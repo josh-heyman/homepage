@@ -1,0 +1,91 @@
+.testimonials-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "pope"
+        "thomson"
+        "hoskins"
+        "marsh"
+        "pope-2"
+        "austin"
+        "patten"
+        "bradley";
+}
+
+.testimonial-job-description {
+    font-weight: 600;
+}
+
+.testimonial-workplace {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.testimonial-content {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+@media (min-width: 40em) and (max-width: 75em) {
+    .testimonials-grid {
+        grid-template-areas:
+            "pope pope thomson"
+            "hoskins marsh marsh"
+            "patten pope-2 bradley"
+            "patten austin bradley";
+    }
+}
+
+@media (min-width: 75em) and (max-width: 120em) {
+    .testimonials-grid {
+        grid-template-areas:
+            "pope pope thomson bradley"
+            "hoskins marsh marsh bradley"
+            "pope-2 austin patten patten";
+    }
+}
+
+@media (min-width: 120em) {
+    .testimonials-grid {
+        grid-template-areas:
+            "pope pope hoskins patten bradley"
+            "thomson marsh marsh austin pope-2";
+    }
+}
+
+.testimonial:nth-child(1) {
+    grid-area: pope;
+}
+
+.testimonial:nth-child(2) {
+    grid-area: thomson;
+}
+
+.testimonial:nth-child(3) {
+    grid-area: hoskins;
+}
+
+.testimonial:nth-child(4) {
+    grid-area: marsh;
+}
+
+.testimonial:nth-child(5) {
+    grid-area: pope-2;
+}
+
+.testimonial:nth-child(6) {
+    grid-area: austin;
+}
+
+.testimonial:nth-child(7) {
+    grid-area: patten;
+}
+
+.testimonial:nth-child(8) {
+    grid-area: bradley;
+}
+
+.testimonial {
+    border-radius: 1rem;
+    padding: 1rem;
+}
