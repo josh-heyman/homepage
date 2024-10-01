@@ -118,3 +118,12 @@ footer {
     text-align: center;
     opacity: 0.4;
 }
+
+.footer-contact-icons a {
+    text-decoration: none;
+}
+
+.footer-contact-icons a img {
+    height: 1.5rem;
+    margin: 0.5rem;
+}
